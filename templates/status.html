@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Flask Intro(Employee Portal) - status page</title>	
+	</head>
+	<body>
+		<table align='center' >
+			<tr>
+				<th></th>
+				<td align='right'><a href="/mainpage">homepage</a></td>
+			</tr>
+		</table>
+		{% if message %}
+			<p align='center'><strong>{{ message }}</strong></p>
+		{% endif %}
+	</body>
+</html>

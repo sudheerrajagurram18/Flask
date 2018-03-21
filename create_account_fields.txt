@@ -1,0 +1,14 @@
+
+:::::::::::::create_Account:::::::::::::
+fName
+lastName
+newpassword
+confirmpassword
+DOB
+Gender
+mobileNum
+email
+location
+
+NOTE : 
+Password should be of 10 chars[small letter/capital letters/digits/special chars]

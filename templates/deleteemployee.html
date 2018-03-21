@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Flask Intro(Employee Portal) - delete employee page</title>	
+	</head>
+	<body>
+		<form action="/deleteemp" method="post">
+			<table align='center' >
+				<tr>
+					<td><strong>Enter EMP-ID : </strong></td>
+					<td><input type="text" name="empid" value=""></td>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</form>
+		{% if error %}
+			<p align='center'><strong>{{ error }}</strong>
+		{% endif %}
+	</body>
+</html>

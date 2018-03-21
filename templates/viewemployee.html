@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Flask Intro(Employee Portal) - viewemployee page</title>	
+	</head>
+	<body>
+		<form action="/" method="post">
+			<table align='center' >
+				<tr>
+					<td><strong>Enter EMP-ID : </strong></td>
+					<td><input type="text" name="empid" value=""></td>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+			</table>
+		</form>
+		{% if error %}			
+			<table align='center' >
+				<tr>
+					<th align='right'>EMP-ID : </th>
+					<td>{{ reslist[0] }}</td>
+				</tr>
+				<tr>
+					<th align='right'>Firstname : </th>
+					<td>{{ reslist[1] }}</td>
+				</tr>
+				<tr>
+					<th align='right'>Lastname : </th>
+					<td>{{ reslist[2] }}</td>
+				</tr>
+				<tr>
+					<th align='right'>DOB : </th>
+					<td>{{ reslist[3] }}</td>
+				</tr>
+				<tr>
+					<th align='right'>Gender : </th>
+					<td>{{ reslist[4] }}</td>
+				</tr>
+			</table>
+		{% else %}
+			<p align='center'><strong>{{  reslist[0] }}</strong>
+		{% endif %}
+	</body>
+</html>

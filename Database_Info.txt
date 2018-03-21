@@ -1,0 +1,31 @@
+
+database creation::
+create database employee
+-----------------------------------------------------------
+
+CREATE TABLE admin_info (
+fname VARCHAR(40), 
+lname VARCHAR(40),
+password VARCHAR(20)
+);
+
+-----------------------------------------------------------
+table creation::
+CREATE TABLE employee_info (
+empid int(4) AUTO_INCREMENT,
+fname VARCHAR(40), 
+lname VARCHAR(40),
+dob date, 
+gender VARCHAR(10), 
+mobilenum VARCHAR(20),
+email VARCHAR(40),
+location VARCHAR(50),
+PRIMARY KEY (empid)
+);
+
+NOTE : 
+INSERT INTO employee_info (fname,lname,dob,gender,mobilenum,email,location) VALUES ('sudheerraja','gurram','1985-10-18','M','8886118816','gurramsudheerraja@gmail.com','Nakrekal');
+INSERT INTO employee_info (fname,lname,dob,gender,mobilenum,email,location) VALUES ('pavan','kotagiri','1985-9-18','M','9032240086','pavankumarkotagiri@gmail.com','Nakrekal');
+-----------------------------------------------------------
+
+
